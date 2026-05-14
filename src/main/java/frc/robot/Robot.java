@@ -46,24 +46,55 @@ public class Robot extends TimedRobot {
   public void autonomousPeriodic() {
     double Tempo = Timer.getFPGATimestamp();
 
+      if (Tempo - TempoInicio < 2) {
+       MotorAtiConstante.set(1);
+      
+      } else if (Tempo - TempoInicio < 4){
+      MotorAtiConstante.set(1);
+       MotorColAti.set(1);
+      } else {
+       MotorAtiConstante.set(0);
+       MotorColAti.set(0);
+      }
+
    //!!!! TESTE ISSO PORFAVOR >:( !!!!!!!
     // É para fazer: Coletar em linha reta de costas, Andar para frente, Girar para a direita(depende), Atirar as bolas armazenadas, Parar;
-    if (Tempo - TempoInicio < 2) {
+    /*if (Tempo - TempoInicio < 2) {
       MotorEsqF.set(-0.5);
       MotorDirF.set(-0.5);
       MotorEsqT.set(-0.5);
       MotorDirT.set(-0.5);
-      MotorColAti.set(-0.5);
-      MotorAtiConstante.set(0.5);
+      MotorColAti.set(-0.8);
+      MotorAtiConstante.set(0.8);
 
-    /*else if (Tempo - TempoInicio < 8) {
-      
+    } else if (Tempo - TempoInicio < 3) {
 
-    } else if (Tempo - TempoInicio < 10.5) {
-      MotorAtiConstante.set(1);
-      MotorColAti.set(-1);
+      MotorEsqF.set(-0.25);
+      MotorDirF.set(-0.25);
+      MotorEsqT.set(-0.25);
+      MotorDirT.set(-0.25);
+      MotorColAti.set(-0.8);
+      MotorAtiConstante.set(0.8);
 
-    }*/ else {
+    }
+
+    else if (Tempo - TempoInicio < 4.4 ) {
+      MotorEsqF.set(0.3);
+      MotorDirF.set(0.3);
+      MotorEsqT.set(0.3);
+      MotorDirT.set(0.3);
+      MotorColAti.set(0);
+      MotorAtiConstante.set(0);
+
+    } else if (Tempo - TempoInicio < 5) {
+      MotorAtiConstante.set(0.9);
+
+
+    } else if (Tempo - TempoInicio < 6) {
+      MotorAtiConstante.set(0.9);
+      MotorColAti.set(1);
+
+    } else {
 
       MotorDirF.set(0);
       MotorEsqF.set(0);
@@ -72,7 +103,7 @@ public class Robot extends TimedRobot {
       MotorColAti.set(0);
       MotorAtiConstante.set(0);
   
-    }
+    }*/
 
   }
 
