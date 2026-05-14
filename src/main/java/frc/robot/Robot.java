@@ -73,25 +73,29 @@ public class Robot extends TimedRobot {
       MotorDirF.set(-0.25);
       MotorEsqT.set(-0.25);
       MotorDirT.set(-0.25);
-      MotorColAti.set(-0.8);
-      MotorAtiConstante.set(0.8);
+      MotorColAti.set(-1);
+      MotorAtiConstante.set(1);
 
     }
 
-    else if (Tempo - TempoInicio < 4.4 ) {
-      MotorEsqF.set(0.3);
-      MotorDirF.set(0.3);
-      MotorEsqT.set(0.3);
-      MotorDirT.set(0.3);
+    else if (Tempo - TempoInicio < 4) {
+      MotorEsqF.set(0.25);
+      MotorDirF.set(0.25);
+      MotorEsqT.set(0.25);
+      MotorDirT.set(0.25);
       MotorColAti.set(0);
-      MotorAtiConstante.set(0);
-
-    } else if (Tempo - TempoInicio < 5) {
-      MotorAtiConstante.set(0.9);
-
+      MotorAtiConstante.set(1);
 
     } else if (Tempo - TempoInicio < 6) {
-      MotorAtiConstante.set(0.9);
+      MotorEsqF.set(0);
+      MotorDirF.set(0);
+      MotorEsqT.set(0);
+      MotorDirT.set(0);
+      MotorAtiConstante.set(1);
+
+
+    } else if (Tempo - TempoInicio < 8) {
+      MotorAtiConstante.set(1);
       MotorColAti.set(1);
 
     } else {
