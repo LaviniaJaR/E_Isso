@@ -56,16 +56,7 @@ public class Robot extends TimedRobot {
       MotorColAti.set(-0.5);
       MotorAtiConstante.set(0.5);
 
-    } else if (Tempo - TempoInicio < 3) {
-
-      MotorEsqF.set(-0.25);
-      MotorDirF.set(-0.25);
-      MotorEsqT.set(-0.25);
-      MotorDirT.set(-0.25);
-      MotorColAti.set(-0.5);
-      MotorAtiConstante.set(0.5);
-
-    } /*else if (Tempo - TempoInicio < 8) {
+    /*else if (Tempo - TempoInicio < 8) {
       
 
     } else if (Tempo - TempoInicio < 10.5) {
