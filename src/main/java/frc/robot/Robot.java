@@ -10,9 +10,6 @@ import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj.Timer;
 
-//!!!!!!! LEMBRE QUE ESSAS CONFIGURAÇÃO SÃO DE UM CONTROLE DE PS4 !!!!!!!!!
-                //!!! ARRUMAR PARA O CONTROLE DE XBOX !!!
-
 
 public class Robot extends TimedRobot {
 
@@ -57,7 +54,7 @@ public class Robot extends TimedRobot {
        MotorColAti.set(0);
       }
 
-   //!!!! TESTE ISSO PORFAVOR >:( !!!!!!!
+   
     // É para fazer: Coletar em linha reta de costas, Andar para frente, Girar para a direita(depende), Atirar as bolas armazenadas, Parar;
     /*if (Tempo - TempoInicio < 2) {
       MotorEsqF.set(-0.5);
@@ -152,16 +149,6 @@ public class Robot extends TimedRobot {
   MotorDirF.set(Direita * 0.6);
   MotorDirT.set(Direita * 0.6);
 
-  
-
-//O de atirar pode tá invertido com o do coletar por conta do negativo !!TESTAR!!
- /*  if (Coleta > 0.2) {
-    MotorColAti.set(0.6);
-
-  } else if (Atirar > 0.2) {
-    MotorAtiConstante.set(1);
-    MotorColAti.set(-0.6);
-  }*/
   }
 
   @Override
