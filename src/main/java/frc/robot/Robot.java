@@ -16,15 +16,15 @@ public class Robot extends TimedRobot {
    Joystick Controle = new Joystick(0);
 
 //Locomoção
-   SparkMax MotorEsqF = new SparkMax(4, MotorType.kBrushed); //Pode estar errado
-   SparkMax MotorEsqT = new SparkMax(5, MotorType.kBrushed); //Pode estar errado
-   SparkMax MotorDirF = new SparkMax(6, MotorType.kBrushed); //Pode estar errado
+   SparkMax MotorEsqF = new SparkMax(4, MotorType.kBrushed); 
+   SparkMax MotorEsqT = new SparkMax(5, MotorType.kBrushed); 
+   SparkMax MotorDirF = new SparkMax(6, MotorType.kBrushed); 
    SparkMax MotorDirT = new SparkMax(7, MotorType.kBrushed);
 
 
 //Atirador de bolas
-   SparkMax MotorColAti = new SparkMax(44, MotorType.kBrushed); //Pode estar errado
-   SparkMax MotorAtiConstante = new SparkMax(55, MotorType.kBrushed); //Pode estar errado
+   SparkMax MotorColAti = new SparkMax(44, MotorType.kBrushed); 
+   SparkMax MotorAtiConstante = new SparkMax(55, MotorType.kBrushed); 
 
 // O TempoInicio serve para que quando iniciar o modo autonomo o tempo de quando o robo foi iniciado não interfira.
    double TempoInicio;
